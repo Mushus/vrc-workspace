@@ -1,0 +1,2 @@
+[remote "origin"]
+	lfsurl = https://fgk5e6luef.execute-api.ap-northeast-1.amazonaws.com/prod/lfs/Mushus/vrc-workspace
