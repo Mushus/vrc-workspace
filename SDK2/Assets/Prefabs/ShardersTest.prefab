@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 5551969558825356938}
   - component: {fileID: 5502648556911855175}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: CubemapSharder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
