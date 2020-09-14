@@ -71,5 +71,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 /[Aa]ssets/VRCSDK/*
+/[Aa]ssets/DynamicBone/*
 
 !.gitkeep
