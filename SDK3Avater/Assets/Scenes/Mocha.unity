@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: dc16420acb119c04db7fbc5e30d8b956, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -118,88 +118,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 909230066}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &866889047
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 866889050}
-  - component: {fileID: 866889049}
-  - component: {fileID: 866889048}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &866889048
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866889047}
-  m_Enabled: 1
---- !u!20 &866889049
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866889047}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &866889050
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866889047}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &868546965 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400028, guid: 62b33e08f0034234f8e4ed4c5dd3f2ce,
@@ -249,6 +167,22 @@ PrefabInstance:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 62b33e08f0034234f8e4ed4c5dd3f2ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.052692354
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 62b33e08f0034234f8e4ed4c5dd3f2ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.08260453
+      objectReference: {fileID: 0}
+    - target: {fileID: 400050, guid: 62b33e08f0034234f8e4ed4c5dd3f2ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.052692343
+      objectReference: {fileID: 0}
+    - target: {fileID: 400050, guid: 62b33e08f0034234f8e4ed4c5dd3f2ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.082604535
+      objectReference: {fileID: 0}
     - target: {fileID: 400122, guid: 62b33e08f0034234f8e4ed4c5dd3f2ce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -279,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400122, guid: 62b33e08f0034234f8e4ed4c5dd3f2ce, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400122, guid: 62b33e08f0034234f8e4ed4c5dd3f2ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -301,6 +235,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 627c4df966606e742a538c87338a5745, type: 2}
+    - target: {fileID: 9500000, guid: 62b33e08f0034234f8e4ed4c5dd3f2ce, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 04c939024dc0ac14fa5d6e264a2e278a, type: 2}
     - target: {fileID: 13700000, guid: 62b33e08f0034234f8e4ed4c5dd3f2ce, type: 3}
       propertyPath: m_BlendShapeWeights.Array.size
       value: 23
@@ -401,9 +339,10 @@ MonoBehaviour:
   unityVersion: 2018.4.20f1
   portraitCameraPositionOffset: {x: 0, y: 0, z: 0}
   portraitCameraRotationOffset: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-  customExpressions: 0
-  expressionsMenu: {fileID: 0}
-  expressionParameters: {fileID: 0}
+  customExpressions: 1
+  expressionsMenu: {fileID: 11400000, guid: 09f2e3a276be38b4bbc6b3009d3a97eb, type: 2}
+  expressionParameters: {fileID: 11400000, guid: 1fe2d0740dd20474a86b5f952216ee44,
+    type: 2}
   enableEyeLook: 1
   customEyeLookSettings:
     eyeMovement:
@@ -421,8 +360,8 @@ MonoBehaviour:
       right: {x: -0.10289389, y: 0, z: 0, w: 0.9946923}
     eyesLookingDown:
       linked: 1
-      left: {x: 0.10627481, y: 0, z: 0, w: 0.9943368}
-      right: {x: 0.10627481, y: 0, z: 0, w: 0.9943368}
+      left: {x: 0.106274806, y: 0, z: 0, w: 0.9943368}
+      right: {x: 0.106274806, y: 0, z: 0, w: 0.9943368}
     eyesLookingLeft:
       linked: 1
       left: {x: 0, y: -0.09634702, z: 0, w: 0.9953478}
@@ -474,7 +413,7 @@ MonoBehaviour:
         right: {x: 0, y: 0, z: 0, w: 0}
     eyelidsSkinnedMesh: {fileID: 909230070}
     eyelidsBlendshapes: 03000000ffffffffffffffff
-  customizeAnimationLayers: 0
+  customizeAnimationLayers: 1
   baseAnimationLayers:
   - isEnabled: 0
     type: 0
@@ -498,9 +437,10 @@ MonoBehaviour:
     isDefault: 1
   - isEnabled: 0
     type: 5
-    animatorController: {fileID: 0}
+    animatorController: {fileID: 9100000, guid: 04c939024dc0ac14fa5d6e264a2e278a,
+      type: 2}
     mask: {fileID: 0}
-    isDefault: 1
+    isDefault: 0
   specialAnimationLayers:
   - isEnabled: 0
     type: 6
@@ -518,9 +458,40 @@ MonoBehaviour:
     mask: {fileID: 0}
     isDefault: 1
   AnimationPreset: {fileID: 0}
-  animationHashSet: []
+  animationHashSet:
+  - hash: 2049139802
+    name: Idle
+  - hash: 1836785410
+    name: SmilingFace
+  - hash: 1948097217
+    name: SleepyFace
+  - hash: 404401524
+    name: EmotionlessFace
+  - hash: 1959127633
+    name: AstonishedFace
+  - hash: -347652567
+    name: SquintingFace
+  - hash: 1558927289
+    name: Idle
+  - hash: -2091419665
+    name: HartEye
+  - hash: -1212244355
+    name: StarEye
   autoFootsteps: 1
   autoLocomotion: 1
+--- !u!114 &909230073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909230067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentType: 0
 --- !u!114 &909230075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -722,5 +693,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}

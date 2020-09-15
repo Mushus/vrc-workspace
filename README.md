@@ -19,8 +19,10 @@ git lfs install
 git clone git@xxxxxxxx
 
 # git-lfs pull
-
-# SDK2, SDK3にそれぞれSDKを導入
 ```
-
+* SDK2 にそれぞれ SDK 2 を導入
+* SDK3 にそれぞれ SDK 3 Udon を導入
+* SDK3Avater にそれぞれ SDK 3 Avater を導入
+* Dynamic Bone を Asset Store から導入
+* SDK3Avater に ユニティちゃんトゥーンシェーダー を導入
 おわり
