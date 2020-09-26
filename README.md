@@ -26,3 +26,13 @@ git clone git@xxxxxxxx
 * Dynamic Bone を Asset Store から導入
 * SDK3Avater に ユニティちゃんトゥーンシェーダー を導入
 おわり
+
+# temp
+
+```
+# build
+docker build -t blender ./.docker/blender
+# run
+docker run -v $PWD:/workspace -it blender:latest ash
+# testing
+docker run -v $PWD:/workspace -it --entrypoint ash blender:latest
