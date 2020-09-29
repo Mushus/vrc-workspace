@@ -36,3 +36,6 @@ docker build -t blender ./.docker/blender
 docker run -v $PWD:/workspace -it blender:latest ash
 # testing
 docker run -v $PWD:/workspace -it --entrypoint ash blender:latest
+
+docker run -v $PWD:/workspace blender:latest ./test.blend -P ./scripts/autoGenerate.py
+```

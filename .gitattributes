@@ -5,3 +5,7 @@
 *.jpeg filter=lfs diff=lfs merge=lfs -text
 *.clip filter=lfs diff=lfs merge=lfs -text
 *.kra filter=lfs diff=lfs merge=lfs -text
+
+docs/**/*.png !filter !diff !merge binary
+docs/**/*.jpg !filter !diff !merge binary
+docs/**/*.jpeg !filter !diff !merge binary

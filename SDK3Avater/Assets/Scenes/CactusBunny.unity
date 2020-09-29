@@ -389,7 +389,7 @@ PrefabInstance:
     - target: {fileID: 13700000, guid: 84e6786310f3af84e9f8af98bdc30d0c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c8b754d349fee044a95ef8b0e64383de, type: 2}
+      objectReference: {fileID: 2100000, guid: 76ab66ec7a62e024a808fed4b2c160fb, type: 2}
     - target: {fileID: 13700000, guid: 84e6786310f3af84e9f8af98bdc30d0c, type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[2]
       value: 0
@@ -397,7 +397,7 @@ PrefabInstance:
     - target: {fileID: 13700002, guid: 84e6786310f3af84e9f8af98bdc30d0c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c8b754d349fee044a95ef8b0e64383de, type: 2}
+      objectReference: {fileID: 2100000, guid: 76ab66ec7a62e024a808fed4b2c160fb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84e6786310f3af84e9f8af98bdc30d0c, type: 3}
 --- !u!1 &1650423581 stripped
@@ -602,3 +602,16 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 1650423580}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1650423587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650423581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentType: 0
