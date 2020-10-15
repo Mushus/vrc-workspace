@@ -1,4 +1,6 @@
 import bpy
+import sys
+import os
 
 # Basic Operation
 
@@ -38,8 +40,24 @@ def remove_object(obj):
 def clone_object(obj):
     clone = obj.copy()
     make_single_user(clone)
-    bpy.context.scene.collection.objects.link(clone)
+    clone.parent = obj.parent
+    parent_name = obj.parent.name
+    collection = find_collection_belong_to(parent_name)
+    if collection is not None:
+        collection.objects.link(clone)
     return clone
+
+def find_collection_belong_to(obj_name):
+    def process(c):
+        if obj_name in c.objects:
+            return c
+        for child in c.children:
+            found = process(child)
+            if found is not None:
+                return found
+        return None
+
+    return process(bpy.context.scene.collection)
 
 
 def join_object():
@@ -140,6 +158,8 @@ def apply_modifier_with_shape_key(obj):
     for src_obj in shape_key_objs.values():
         apply_modifier_without_shape_key(src_obj)
 
+    deselect_all_object()
+
     dst_obj = None
     for shape_key_name, src_obj in shape_key_objs.items():
         if dst_obj is None:
@@ -175,18 +195,32 @@ def apply_objects_modifiers():
     for obj in process_targets:
         apply_process_target_modifiers(obj)
 
+def read_args():
+    argv = sys.argv
+    try:
+        index = argv.index("--") + 1
+    except ValueError:
+        index = len(argv)
+
+    argv = argv[index:]
+    return argv
+
+def save_as_fbx():
+    filepath = os.path.splitext(bpy.data.filepath)[0]+'.fbx'
+
+    process_targets = list_process_target_objects()
+    objects_select(process_targets)
+    bpy.ops.export_scene.fbx(
+        filepath=filepath,
+        path_mode='RELATIVE',
+        use_selection=True
+    )
+
 # Main
 
 initialize()
 apply_objects_modifiers()
 merge_objects()
+save_as_fbx()
 
-process_targets = list_process_target_objects()
-objects_select(process_targets)
-bpy.ops.export_scene.fbx(
-    filepath="/workspace/out.fbx",
-    path_mode='RELATIVE',
-    use_selection=True
-)
-
-bpy.ops.wm.save_as_mainfile(filepath="/workspace/out.blend")
+# bpy.ops.wm.save_as_mainfile(filepath="/workspace/out.blend")

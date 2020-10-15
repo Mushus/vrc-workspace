@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: dc16420acb119c04db7fbc5e30d8b956, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -420,7 +420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchedFromSDKPipeline: 1
   completedSDKPipeline: 0
-  blueprintId: avtr_122455ee-9464-45b3-bfaf-7d8b7f414486
+  blueprintId: avtr_e1a6feae-693d-4ad9-94b0-3f0a8b76ce4a
   contentType: 0
   assetBundleUnityVersion: 
 --- !u!114 &1650423583
