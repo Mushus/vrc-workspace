@@ -1,4 +1,4 @@
-﻿Shader "Musharder/Effects/Hologram"
+﻿Shader "MuSharder/Effects/Hologram"
 {
 	Properties
 	{

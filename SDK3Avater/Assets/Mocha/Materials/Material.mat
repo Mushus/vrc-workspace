@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Material
   m_Shader: {fileID: 4800000, guid: 9baf30ce95c751649b14d96da3a4b4d5, type: 3}
-  m_ShaderKeywords: _OUTLINE_POS
+  m_ShaderKeywords: _ _EMISSIVE_SIMPLE _OUTLINE_POS
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -35,6 +35,26 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Emissive_Tex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -51,6 +71,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _NormalMap:
         m_Texture: {fileID: 2800000, guid: 0163ef02808906b4aaad90a73ab765d4, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -59,11 +83,19 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OutlineTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Outline_Sampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -90,13 +122,13 @@ Material:
     m_Floats:
     - _1st2nd_Shades_Feather: 0.0001
     - _1st_ShadeColor_Feather: 0.06
-    - _1st_ShadeColor_Step: 0.301
+    - _1st_ShadeColor_Step: 0.616
     - _2nd_ShadeColor_Feather: 0.0001
     - _2nd_ShadeColor_Step: 0
     - _Add_Antipodean_RimLight: 0
     - _Ap_RimLight_FeatherOff: 0
     - _Ap_RimLight_Power: 0.1
-    - _BaseColor_Step: 0.301
+    - _BaseColor_Step: 0.616
     - _BaseShade_Feather: 0.06
     - _Base_Speed: 0
     - _BlurLevelMatcap: 0
@@ -105,9 +137,15 @@ Material:
     - _CameraRolling_Stabilizer: 1
     - _ColorShift_Speed: 0
     - _CullMode: 2
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
     - _EMISSIVE: 0
     - _Farthest_Distance: 100
     - _GI_Intensity: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0
+    - _GlossyReflections: 1
     - _HighColor_Power: 0
     - _Inverse_MatcapMask: 0
     - _Inverse_Z_Axis_BLD: 1
@@ -141,12 +179,16 @@ Material:
     - _Is_ViewShift: 0
     - _LightDirection_MaskOn: 1
     - _MatCap: 0
+    - _Metallic: 0
+    - _Mode: 0
     - _Nearest_Distance: 0.5
     - _OUTLINE: 1
+    - _OcclusionStrength: 1
     - _Offset_X_Axis_BLD: -0.07
     - _Offset_Y_Axis_BLD: 0.05
     - _Offset_Z: 0
     - _Outline_Width: 2
+    - _Parallax: 0.02
     - _RimLight: 1
     - _RimLight_FeatherOff: 0
     - _RimLight_InsideMask: 0.1
@@ -158,6 +200,9 @@ Material:
     - _Scroll_EmissiveV: 0
     - _Set_SystemShadowsToBase: 1
     - _ShadeColor_Step: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
     - _StepOffset: 0
     - _TweakHighColorOnShadow: 0
     - _TweakMatCapOnShadow: 0
@@ -167,9 +212,11 @@ Material:
     - _Tweak_MatcapMaskLevel: 0
     - _Tweak_RimLightMaskLevel: 0
     - _Tweak_SystemShadowsLevel: 0
+    - _UVSec: 0
     - _Unlit_Intensity: 1
     - _Use_1stAs2nd: 0
     - _Use_BaseAs1st: 0
+    - _ZWrite: 1
     - _simpleUI: 0
     - _utsTechnique: 0
     - _utsVersion: 2.075
@@ -180,6 +227,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorShift: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emissive_Color: {r: 0, g: 0, b: 0, a: 1}
     - _HighColor: {r: 0, g: 0, b: 0, a: 1}
     - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
