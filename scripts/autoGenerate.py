@@ -195,6 +195,22 @@ def apply_objects_modifiers():
     for obj in process_targets:
         apply_process_target_modifiers(obj)
 
+def remove_target_uvmap(obj):
+    if obj.type != 'MESH':
+        return
+    mesh = obj.data
+    for uv in mesh.uv_layers:
+        if uv.name.startswith('_'):
+            mesh.uv_layers.remove(uv)
+        
+
+    
+
+def remove_uvmap():
+    process_targets = list_process_target_objects()
+    for obj in process_targets:
+        remove_target_uvmap(obj)
+
 def read_args():
     argv = sys.argv
     try:
@@ -213,13 +229,16 @@ def save_as_fbx():
     bpy.ops.export_scene.fbx(
         filepath=filepath,
         path_mode='RELATIVE',
-        use_selection=True
+        use_selection=True,
+        apply_scale_options='FBX_SCALE_UNITS',
+        bake_anim=False
     )
 
 # Main
 
 initialize()
 apply_objects_modifiers()
+remove_uvmap()
 merge_objects()
 save_as_fbx()
 

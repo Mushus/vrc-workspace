@@ -54,6 +54,8 @@ ModelImporter:
     100096: UpperChest
     100098: UpperLeg.L
     100100: UpperLeg.R
+    100102: SweetDragonBody
+    100104: SweetsDragon
     400000: //RootNode
     400002: Breasts.L
     400004: Breasts.L_end
@@ -105,6 +107,8 @@ ModelImporter:
     400096: UpperChest
     400098: UpperLeg.L
     400100: UpperLeg.R
+    400102: SweetDragonBody
+    400104: SweetsDragon
     2100000: Body2
     2100002: Pink
     2100004: Cream
@@ -118,12 +122,14 @@ ModelImporter:
     3300000: //RootNode
     3300002: SweetsDragon.001
     4300000: SweetsDragon.001
+    4300002: SweetsDragon
     9500000: //RootNode
     13700000: SweetsDragon.001
+    13700002: SweetsDragon
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -180,10 +186,10 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
@@ -370,20 +376,15 @@ ModelImporter:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: SweetsDragon.001
+    - name: SweetDragonBody
       parentName: SweetsDragon(Clone)
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 11.30941, y: 11.30941, z: 11.30941}
-    - name: SweetDragonBody.001
-      parentName: SweetsDragon(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 34.780468, y: 34.780468, z: 34.780468}
     - name: Hips
-      parentName: SweetDragonBody.001
+      parentName: SweetDragonBody
       position: {x: -0, y: 0, z: 0.0043649743}
-      rotation: {x: 0.7071068, y: -0.00000008429372, z: -0.0000000842937, w: 0.7071067}
+      rotation: {x: 0.7071068, y: -0.00000008429372, z: -0.00000008429371, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Spine
       parentName: Hips
@@ -418,7 +419,7 @@ ModelImporter:
     - name: Ear.L.001
       parentName: Ear.L
       position: {x: -4.871981e-10, y: 0.003478374, z: -1.8626451e-11}
-      rotation: {x: 0.019435883, y: -0.010093359, z: -0.101609364, w: 0.9945833}
+      rotation: {x: 0.019435884, y: -0.010093359, z: -0.101609364, w: 0.9945833}
       scale: {x: 1, y: 1.0000001, z: 0.99999994}
     - name: Ear.L.001_end
       parentName: Ear.L.001
@@ -433,7 +434,7 @@ ModelImporter:
     - name: Ear.R.001
       parentName: Ear.R
       position: {x: 4.871981e-10, y: 0.003478374, z: -1.8626451e-11}
-      rotation: {x: 0.019435883, y: 0.010093359, z: 0.101609364, w: 0.9945833}
+      rotation: {x: 0.019435884, y: 0.010093359, z: 0.101609364, w: 0.9945833}
       scale: {x: 1, y: 1.0000001, z: 0.99999994}
     - name: Ear.R.001_end
       parentName: Ear.R.001
@@ -510,96 +511,6 @@ ModelImporter:
       position: {x: -0, y: 0.0016940301, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Breasts.L
-      parentName: Chest
-      position: {x: -0.0027492146, y: 0.002417615, z: 0.000028756}
-      rotation: {x: 0.7071068, y: 0.0000007404495, z: 0.0000005014798, w: 0.7071067}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Breasts.L_end
-      parentName: Breasts.L
-      position: {x: -0, y: 0.00088184566, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Breasts.R
-      parentName: Chest
-      position: {x: 0.0027492146, y: 0.002417615, z: 0.000028754686}
-      rotation: {x: 0.7071068, y: -0.00000050147986, z: -0.0000007404493, w: 0.7071067}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Breasts.R_end
-      parentName: Breasts.R
-      position: {x: -0, y: 0.00088184566, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: UpperLeg.L
-      parentName: Hips
-      position: {x: -0.0025122787, y: 0.0017909232, z: 0.0000029348514}
-      rotation: {x: 0.7071069, y: 0.000000030908616, z: 0.70710665, w: -0.000000030908627}
-      scale: {x: 1, y: 0.99999994, z: 1}
-    - name: LowerLeg.L
-      parentName: UpperLeg.L
-      position: {x: -9.377387e-14, y: 0.0029363376, z: -1.2826018e-13}
-      rotation: {x: 0, y: -0.000000015893253, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Foot.L
-      parentName: LowerLeg.L
-      position: {x: 8.519407e-14, y: 0.0021888309, z: -2.2153002e-13}
-      rotation: {x: -0.000000068385376, y: -0.000000054591336, z: -0.49445647, w: 0.8692024}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Toes.L
-      parentName: Foot.L
-      position: {x: 3.4921684e-11, y: 0.001638203, z: 1.1954199e-10}
-      rotation: {x: -0.000000079820175, y: -0.00000009653561, z: -0.26498538, w: 0.9642525}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Toes.L_end
-      parentName: Toes.L
-      position: {x: -0, y: 0.0007037833, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Heel.L
-      parentName: Foot.L
-      position: {x: -0.0007755107, y: -0.00015152007, z: 0.0018165492}
-      rotation: {x: 0.014562937, y: 0.0000004899476, z: 0.4889467, w: 0.8721921}
-      scale: {x: 0.99999994, y: 0.9999999, z: 1}
-    - name: Heel.L_end
-      parentName: Heel.L
-      position: {x: -0, y: 0.00042593278, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: UpperLeg.R
-      parentName: Hips
-      position: {x: 0.0025122787, y: 0.0017909232, z: 0.0000029336536}
-      rotation: {x: 0.7071069, y: 0.000000030908616, z: -0.70710665, w: 0.000000030908627}
-      scale: {x: 1, y: 1, z: 1}
-    - name: LowerLeg.R
-      parentName: UpperLeg.R
-      position: {x: 9.377387e-14, y: 0.0029363376, z: -1.2826018e-13}
-      rotation: {x: 0, y: 0.000000015893253, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Foot.R
-      parentName: LowerLeg.R
-      position: {x: -8.519407e-14, y: 0.0021888306, z: -2.2153002e-13}
-      rotation: {x: -0.000000068385376, y: 0.000000054591336, z: 0.49445647, w: 0.8692024}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Toes.R
-      parentName: Foot.R
-      position: {x: -3.4921753e-11, y: 0.0016382029, z: 1.1954203e-10}
-      rotation: {x: -0.000000079820175, y: 0.00000009653561, z: 0.26498538, w: 0.9642525}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Toes.R_end
-      parentName: Toes.R
-      position: {x: -0, y: 0.0007037833, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Heel.R
-      parentName: Foot.R
-      position: {x: 0.00077551056, y: -0.00015151995, z: 0.0018165492}
-      rotation: {x: 0.014562938, y: -0.00000048912875, z: -0.48894665, w: 0.87219214}
-      scale: {x: 0.9999999, y: 0.9999999, z: 1}
-    - name: Heel.R_end
-      parentName: Heel.R
-      position: {x: -0, y: 0.00042593278, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: Tail
       parentName: Hips
       position: {x: 0.00008176707, y: 0.0027418353, z: -0.003191849}
@@ -620,6 +531,81 @@ ModelImporter:
       position: {x: -0, y: 0.0026604482, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: UpperLeg.L
+      parentName: Hips
+      position: {x: -0.0025122787, y: 0.0017909232, z: 0.0000029348514}
+      rotation: {x: 0.7071069, y: 0.000000030908616, z: 0.70710665, w: -0.000000030908627}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: LowerLeg.L
+      parentName: UpperLeg.L
+      position: {x: -9.377387e-14, y: 0.0029363376, z: -1.2826018e-13}
+      rotation: {x: 0, y: -0.000000015893253, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foot.L
+      parentName: LowerLeg.L
+      position: {x: 8.519407e-14, y: 0.0021888309, z: -2.2153002e-13}
+      rotation: {x: -0.000000068385376, y: -0.000000054591336, z: -0.49445647, w: 0.8692024}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Heel.L
+      parentName: Foot.L
+      position: {x: -0.0007755107, y: -0.00015152007, z: 0.0018165492}
+      rotation: {x: 0.0145629365, y: 0.0000004894922, z: 0.4889467, w: 0.8721921}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: Heel.L_end
+      parentName: Heel.L
+      position: {x: -0, y: 0.00042593278, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Toes.L
+      parentName: Foot.L
+      position: {x: 3.4921684e-11, y: 0.001638203, z: 1.1954199e-10}
+      rotation: {x: -0.000000079820175, y: -0.00000009653562, z: -0.26498535, w: 0.9642525}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Toes.L_end
+      parentName: Toes.L
+      position: {x: -0, y: 0.0007037833, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLeg.R
+      parentName: Hips
+      position: {x: 0.0025122787, y: 0.0017909232, z: 0.0000029336536}
+      rotation: {x: 0.7071069, y: 0.000000030908616, z: -0.70710665, w: 0.000000030908627}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerLeg.R
+      parentName: UpperLeg.R
+      position: {x: 9.377387e-14, y: 0.0029363376, z: -1.2826018e-13}
+      rotation: {x: 0, y: 0.000000015893253, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foot.R
+      parentName: LowerLeg.R
+      position: {x: -8.519407e-14, y: 0.0021888306, z: -2.2153002e-13}
+      rotation: {x: -0.000000068385376, y: 0.000000054591336, z: 0.49445647, w: 0.8692024}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Heel.R
+      parentName: Foot.R
+      position: {x: 0.00077551056, y: -0.00015151995, z: 0.0018165492}
+      rotation: {x: 0.014562937, y: -0.0000004890796, z: -0.48894665, w: 0.87219214}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Heel.R_end
+      parentName: Heel.R
+      position: {x: -0, y: 0.00042593278, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Toes.R
+      parentName: Foot.R
+      position: {x: -3.4921753e-11, y: 0.0016382029, z: 1.1954203e-10}
+      rotation: {x: -0.00000007982017, y: 0.00000009653562, z: 0.26498535, w: 0.9642525}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Toes.R_end
+      parentName: Toes.R
+      position: {x: -0, y: 0.0007037833, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SweetsDragon
+      parentName: SweetsDragon(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 11.30941, y: 11.30941, z: 11.30941}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5

@@ -167,6 +167,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400156, guid: 182a812318418ef43b04ad4256762b83, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5263353
+      objectReference: {fileID: 0}
+    - target: {fileID: 400156, guid: 182a812318418ef43b04ad4256762b83, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.062784724
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 182a812318418ef43b04ad4256762b83, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5263353
+      objectReference: {fileID: 0}
+    - target: {fileID: 400158, guid: 182a812318418ef43b04ad4256762b83, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.062784724
+      objectReference: {fileID: 0}
     - target: {fileID: 400186, guid: 182a812318418ef43b04ad4256762b83, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.00000011920929
@@ -199,6 +215,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 182a812318418ef43b04ad4256762b83, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d7a714a413eb7b948b4b1be470b3f9f4, type: 2}
     - target: {fileID: 13700000, guid: 182a812318418ef43b04ad4256762b83, type: 3}
       propertyPath: m_BlendShapeWeights.Array.size
       value: 38
@@ -221,6 +241,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: 182a812318418ef43b04ad4256762b83, type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: 182a812318418ef43b04ad4256762b83, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[6]
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -261,7 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: 
-  ViewPosition: {x: 0, y: 1.2865672, z: 0.2}
+  ViewPosition: {x: 0, y: 0.90611255, z: 0.15049207}
   Animations: 0
   ScaleIPD: 1
   lipSync: 3
@@ -290,8 +314,9 @@ MonoBehaviour:
   portraitCameraPositionOffset: {x: 0, y: 0, z: 0}
   portraitCameraRotationOffset: {x: 0, y: 1, z: 0, w: -0.00000004371139}
   customExpressions: 1
-  expressionsMenu: {fileID: 0}
-  expressionParameters: {fileID: 0}
+  expressionsMenu: {fileID: 11400000, guid: 1790a5c64f26b4a4abefd4cbefe0fbd7, type: 2}
+  expressionParameters: {fileID: 11400000, guid: f8a1a0299a392344994f57b72c41ea3c,
+    type: 2}
   enableEyeLook: 1
   customEyeLookSettings:
     eyeMovement:
@@ -309,16 +334,16 @@ MonoBehaviour:
       right: {x: -0.12865843, y: 0, z: 0, w: 0.99168897}
     eyesLookingDown:
       linked: 1
-      left: {x: 0.15309455, y: 0, z: 0, w: 0.9882116}
-      right: {x: 0.15309455, y: 0, z: 0, w: 0.9882116}
+      left: {x: 0.10257449, y: 0, z: 0, w: 0.99472535}
+      right: {x: 0.10257449, y: 0, z: 0, w: 0.99472535}
     eyesLookingLeft:
       linked: 1
-      left: {x: 0, y: -0.06104854, z: 0, w: 0.9981348}
-      right: {x: 0, y: -0.06104854, z: 0, w: 0.9981348}
+      left: {x: 0, y: -0.016877249, z: 0, w: 0.99985754}
+      right: {x: 0, y: -0.016877249, z: 0, w: 0.99985754}
     eyesLookingRight:
       linked: 1
-      left: {x: 0, y: 0.06104888, z: 0, w: 0.9981348}
-      right: {x: 0, y: 0.06104888, z: 0, w: 0.9981348}
+      left: {x: 0, y: 0.016878905, z: 0, w: 0.99985754}
+      right: {x: 0, y: 0.016878905, z: 0, w: 0.99985754}
     eyelidType: 2
     upperLeftEyelid: {fileID: 0}
     upperRightEyelid: {fileID: 0}
@@ -388,7 +413,7 @@ MonoBehaviour:
     type: 5
     animatorController: {fileID: 0}
     mask: {fileID: 0}
-    isDefault: 1
+    isDefault: 0
   specialAnimationLayers:
   - isEnabled: 0
     type: 6
