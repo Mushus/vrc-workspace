@@ -27,6 +27,19 @@ git clone git@xxxxxxxx
 * SDK3Avater に ユニティちゃんトゥーンシェーダー を導入
 おわり
 
+## unity をアクティベーションする
+
+プロジェクトルートディレクトリにアクティベーションファイルをつくる
+
+```
+# .unity_lisence に unity のマニュアルアクティベーションライセンスファイルが生成されます
+make unity_activation_file
+```
+
+
+https://license.unity3d.com/manual にアクセスして、アクティベーションしたライセンスファイルをダウンロードします。
+ダンロードしたファイルを `.unity_lisence` ディレクトリに配置します。
+
 # temp
 
 ```

@@ -1,3 +1,8 @@
 *.blend1
 *.blend1.meta
 *~
+.env
+Unity_v*
+.cache/unity/config
+.cache/unity/share
+!.gitkeep

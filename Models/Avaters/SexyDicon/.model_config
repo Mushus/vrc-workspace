@@ -1,0 +1,37 @@
+export MODEL_NAME=セクシー大根
+
+export MODEL_DESCRIPTION="$(cat <<EOS
+地球外に持ち出された大根が放射線にされされたことで突然変異した。
+一般的に美脚である。
+EOS
+)"
+
+export MODEL_QUEST_COMPATIBLE="未対応 ( アルファ値未対応のため )"
+
+export DATA_CONTENTS="$(cat <<EOS
+- CactusBunny.unitypackage ファイル
+- CactusBunny.blend 3D モデルデータ
+- CactusBunny.fbx 3D モデルデータ
+- BaseColor テクスチャデータ (png)
+- Normal テクスチャデータ (png)
+- LISENCE 利用規約
+- README モデル概要
+EOS
+)"
+
+export GETTING_STARTED="$(cat <<EOS
+簡易的な大まかなデータの利用方法です。
+Unity での操作方法や VRChat SDK の利用方法についての詳細は詳しく説明している方がいますので、 Google 等で検索してみてください。
+
+1. VRChat SDK3 Avater を導入済みの Unity プロジェクトを用意します。
+2. `Avater.unitypackage` をダブルクリックし、プロジェクトにインポートします。
+3. インポートされたディレクトリのシーンファイル `SampleScene.scene` を開きます。
+4. VRChat SDK のツールを利用して公開します。
+EOS
+)"
+
+export LAST_MODIFIED="$(cat <<EOS
+- 2020/12/15 公開
+- 2020/12/16 README に大まかなセットアップ方法を追加、セットアップ済みシーンファイル追加
+EOS
+)"

@@ -156,10 +156,10 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    importVisibility: 1
+    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -178,7 +178,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 3
+    tangentImportMode: 1
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
@@ -395,7 +395,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Chest
       parentName: Spine
-      position: {x: -0, y: 0.00083794113, z: 0}
+      position: {x: -0, y: 0.0008379411, z: 0}
       rotation: {x: -0.036115848, y: 0.00000011913153, z: 0.000000012916035, w: 0.9993476}
       scale: {x: 1, y: 1, z: 1}
     - name: Neck
@@ -485,7 +485,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: EyeLeft
       parentName: Head
-      position: {x: -0.00041667125, y: 0.00087706227, z: 0.0005346756}
+      position: {x: -0.00041667125, y: 0.0008770622, z: 0.0005346756}
       rotation: {x: -0.009120176, y: 0.00000011918454, z: -0.0000000010870295, w: 0.99995846}
       scale: {x: 1, y: 0.9999999, z: 0.99999994}
     - name: EyeLeft_end
@@ -495,7 +495,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: EyeRight
       parentName: Head
-      position: {x: 0.00041667148, y: 0.00087706227, z: 0.00053467543}
+      position: {x: 0.00041667148, y: 0.0008770622, z: 0.00053467543}
       rotation: {x: -0.009120176, y: 0.00000011918454, z: -0.0000000010870295, w: 0.99995846}
       scale: {x: 1, y: 0.9999999, z: 0.99999994}
     - name: EyeRight_end
@@ -540,7 +540,7 @@ ModelImporter:
       scale: {x: 1, y: 0.9999997, z: 1}
     - name: Lower Arm.R
       parentName: Upper Arm.R
-      position: {x: -3.668049e-11, y: 0.0005268255, z: 1.3424198e-10}
+      position: {x: -3.6680485e-11, y: 0.0005268255, z: 1.3424198e-10}
       rotation: {x: 2.954451e-18, y: 0.000000009237738, z: 3.4077656e-15, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Hand.R
@@ -615,7 +615,7 @@ ModelImporter:
       scale: {x: 1, y: 1.0000001, z: 1}
     - name: Tail.002
       parentName: Tail.001
-      position: {x: 1.2398892e-16, y: 0.0030002163, z: 0}
+      position: {x: 1.2398892e-16, y: 0.003000216, z: 0}
       rotation: {x: -0.2912522, y: 0.00000011404118, z: 0.000000034719996, w: 0.9566463}
       scale: {x: 1, y: 0.99999994, z: 1}
     - name: Tail.002_end

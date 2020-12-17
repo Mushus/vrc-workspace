@@ -3,6 +3,15 @@ import sys
 import os
 
 # Basic Operation
+def read_args():
+    argv = sys.argv
+    try:
+        index = argv.index("--") + 1
+    except ValueError:
+        index = len(argv)
+
+    argv = argv[index:]
+    return argv
 
 def initialize():
     for obj in bpy.data.objects.values():
@@ -202,44 +211,32 @@ def remove_target_uvmap(obj):
     for uv in mesh.uv_layers:
         if uv.name.startswith('_'):
             mesh.uv_layers.remove(uv)
-        
 
-    
 
 def remove_uvmap():
     process_targets = list_process_target_objects()
     for obj in process_targets:
         remove_target_uvmap(obj)
 
-def read_args():
-    argv = sys.argv
-    try:
-        index = argv.index("--") + 1
-    except ValueError:
-        index = len(argv)
-
-    argv = argv[index:]
-    return argv
-
-def save_as_fbx():
-    filepath = os.path.splitext(bpy.data.filepath)[0]+'.fbx'
-
+def save_as_fbx(filepath):
     process_targets = list_process_target_objects()
     objects_select(process_targets)
     bpy.ops.export_scene.fbx(
         filepath=filepath,
         path_mode='RELATIVE',
         use_selection=True,
-        apply_scale_options='FBX_SCALE_UNITS',
+        # apply_scale_options='FBX_SCALE_UNITS',
         bake_anim=False
     )
 
 # Main
+args = read_args()
+filepath = args[0]
 
 initialize()
 apply_objects_modifiers()
 remove_uvmap()
 merge_objects()
-save_as_fbx()
+save_as_fbx(filepath)
 
 # bpy.ops.wm.save_as_mainfile(filepath="/workspace/out.blend")
