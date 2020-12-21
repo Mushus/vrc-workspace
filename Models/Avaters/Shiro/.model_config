@@ -1,13 +1,13 @@
 export MODEL_NAME=シロ
 
-export MODEL_DESCRIPTION="$(cat <<EOS
+export MODEL_DESCRIPTION="$(cat <<'EOS'
 VRChat SDK3 の使用方法確認用に作成したアバターです。
 EOS
 )"
 
 export MODEL_QUEST_COMPATIBLE=対応
 
-export DATA_CONTENTS="$(cat <<EOS
+export DATA_CONTENTS="$(cat <<'EOS'
 - Shiro.unitypackage ファイル
 - Shiro.blend 3D モデルデータ
 - Shiro.fbx 3D モデルデータ
@@ -20,7 +20,7 @@ export DATA_CONTENTS="$(cat <<EOS
 EOS
 )"
 
-export GETTING_STARTED="$(cat <<EOS
+export GETTING_STARTED="$(cat <<'EOS'
 簡易的な大まかなデータの利用方法です。
 Unity での操作方法や VRChat SDK の利用方法についての詳細は詳しく説明している方がいますので、 Google 等で検索してみてください。
 
@@ -31,7 +31,8 @@ Unity での操作方法や VRChat SDK の利用方法についての詳細は�
 EOS
 )"
 
-export LAST_MODIFIED="$(cat <<EOS
-- 2020/12/17 公開
+export LAST_MODIFIED="$(cat <<'EOS'
+- 2020/12/19 公開
+- 2020/12/20 眉毛のシェイプキー修正。ブループリントIDが削除されていなかった問題の修正。
 EOS
 )"

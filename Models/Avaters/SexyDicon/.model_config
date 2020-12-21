@@ -1,6 +1,6 @@
 export MODEL_NAME=セクシー大根
 
-export MODEL_DESCRIPTION="$(cat <<EOS
+export MODEL_DESCRIPTION="$(cat <<'EOS'
 地球外に持ち出された大根が放射線にされされたことで突然変異した。
 一般的に美脚である。
 EOS
@@ -8,7 +8,7 @@ EOS
 
 export MODEL_QUEST_COMPATIBLE="未対応 ( アルファ値未対応のため )"
 
-export DATA_CONTENTS="$(cat <<EOS
+export DATA_CONTENTS="$(cat <<'EOS'
 - CactusBunny.unitypackage ファイル
 - CactusBunny.blend 3D モデルデータ
 - CactusBunny.fbx 3D モデルデータ
@@ -19,7 +19,7 @@ export DATA_CONTENTS="$(cat <<EOS
 EOS
 )"
 
-export GETTING_STARTED="$(cat <<EOS
+export GETTING_STARTED="$(cat <<'EOS'
 簡易的な大まかなデータの利用方法です。
 Unity での操作方法や VRChat SDK の利用方法についての詳細は詳しく説明している方がいますので、 Google 等で検索してみてください。
 
@@ -30,8 +30,9 @@ Unity での操作方法や VRChat SDK の利用方法についての詳細は�
 EOS
 )"
 
-export LAST_MODIFIED="$(cat <<EOS
+export LAST_MODIFIED="$(cat <<'EOS'
 - 2020/12/15 公開
 - 2020/12/16 README に大まかなセットアップ方法を追加、セットアップ済みシーンファイル追加
+- 2020/12/19 README 修正
 EOS
 )"

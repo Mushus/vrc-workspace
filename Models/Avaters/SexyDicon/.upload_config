@@ -1,0 +1,14 @@
+[
+    {
+        "id": "2604739",
+        "description": $MODEL_DESCRIPTION,
+        "files": [
+            { "path": "/workspace/output.zip" }
+        ],
+        "variations": [
+            { "files": [0] },
+            { "files": [0] }
+        ],
+        "saveas": "public"
+    }
+]

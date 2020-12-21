@@ -1,0 +1,37 @@
+export MODEL_NAME=すいドラ
+
+export MODEL_DESCRIPTION="$(cat <<'EOS'
+ぬいぐるみとスイーツがモチーフのゆめかわドラゴンです
+EOS
+)"
+
+export MODEL_QUEST_COMPATIBLE="未対応 ( アルファ値未対応のため )"
+
+export DATA_CONTENTS="$(cat <<'EOS'
+- Shiro.unitypackage ファイル
+- Shiro.blend 3D モデルデータ
+- Shiro.fbx 3D モデルデータ
+- BaseColor テクスチャデータ (png, psd※1, kra)
+- Normal テクスチャデータ (png, psd※1, kra)
+- LISENCE 利用規約
+- README モデル概要
+
+※1 psd ファイルは kra ファイル (Krita 専用画像形式 ) より生成しているため、 実際の画像とは異なる場合があります
+EOS
+)"
+
+export GETTING_STARTED="$(cat <<'EOS'
+簡易的な大まかなデータの利用方法です。
+Unity での操作方法や VRChat SDK の利用方法についての詳細は詳しく説明している方がいますので、 Google 等で検索してみてください。
+
+1. VRChat SDK3 Avater を導入済みの Unity プロジェクトを用意します。
+2. `Avater.unitypackage` をダブルクリックし、プロジェクトにインポートします。
+3. インポートされたディレクトリのシーンファイル `SampleScene.scene` を開きます。
+4. VRChat SDK のツールを利用して公開します。
+EOS
+)"
+
+export LAST_MODIFIED="$(cat <<'EOS'
+- 2020/12/20 公開
+EOS
+)"

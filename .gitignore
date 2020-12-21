@@ -3,6 +3,5 @@
 *~
 .env
 Unity_v*
-.cache/unity/config
-.cache/unity/share
+.cache/cookie
 !.gitkeep

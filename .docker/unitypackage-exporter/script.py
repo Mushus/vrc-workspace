@@ -83,7 +83,7 @@ def generate_exported_scene(scene_fileobject):
             blueprintId = entry.blueprintId
             if blueprintId is not None:
                 print(blueprintId)
-                scene_data = scene_data.replace('blueprintId: {}', blueprintId)
+                scene_data = scene_data.replace('blueprintId: {}'.format(blueprintId), 'blueprintId:')
 
     return scene_data
 

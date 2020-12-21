@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: CustomExpressionsMenu
+  m_EditorClassIdentifier: 
+  controls:
+  - name: Faces
+    icon: {fileID: 2800000, guid: aa8fe4c8783f7c242baf66f12859ebf4, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 2a5f103ae444f94438bb435fe11d9048, type: 2}
+    subParameters: []
+    labels: []
+  - name: Eyes
+    icon: {fileID: 2800000, guid: 0b7eb428f9fccca4ca7849800fff7154, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 656e86f1556dfa94c8e2665ed9867fba, type: 2}
+    subParameters: []
+    labels: []
