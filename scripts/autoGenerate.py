@@ -212,6 +212,14 @@ def remove_target_uvmap(obj):
         if uv.name.startswith('_'):
             mesh.uv_layers.remove(uv)
 
+def remove_target_materials(obj):
+    if obj.type != 'MESH':
+        return
+    mesh = obj.data
+    objects_select([obj])
+    for materials in mesh.materials:
+        bpy.ops.object.material_slot_remove()
+
 
 def remove_uvmap():
     process_targets = list_process_target_objects()
@@ -229,6 +237,11 @@ def save_as_fbx(filepath):
         bake_anim=False
     )
 
+def remove_materials():
+    process_targets = list_process_target_objects()
+    for obj in process_targets:
+        remove_target_materials(obj)
+
 # Main
 args = read_args()
 filepath = args[0]
@@ -236,6 +249,7 @@ filepath = args[0]
 initialize()
 apply_objects_modifiers()
 remove_uvmap()
+remove_materials()
 merge_objects()
 save_as_fbx(filepath)
 

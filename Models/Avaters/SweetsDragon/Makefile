@@ -13,13 +13,15 @@ FILE_COPIED := \
 	Normal.png \
 	Other.BaseColor.png \
 	Roughness.png \
-	Specular.png \
 	Stitch.png \
 	Strawberry.AO.png \
 	Strawberry.Color.png \
 	StrawBerry.Normal.png \
 	SweetsDragon.Maf.png \
-	SweetsDragon.blend
+	RimlightMask.png \
+	MetaricSmoothness.png \
+	SweetsDragon.blend \
+
 FILE_FROM_BLEND := SweetsDragon.fbx
 FILE_MAIN_FBX := SweetsDragon.fbx
 

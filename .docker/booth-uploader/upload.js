@@ -136,6 +136,8 @@ async function upload(config, { visible, username, password, chromePath, cookieP
             console.log(' > ok');
         }
 
+        await page.waitForTimeout(300);
+
         // アイテムの保存
         const buttonText = saveas === 'draft' ? '下書きで保存する' : '公開で保存する';
         console.log(`save item: ${buttonText}`);
@@ -167,6 +169,8 @@ async function uploadableModal(page, openModal, callback) {
     }
 
     await callback(page, downloadableModalContent)
+
+    await page.waitForTimeout(300);
 
     // モーダルを閉じる
     const closeButton = await modal.$('.icon-cancel');
@@ -202,7 +206,7 @@ function createRefleshModalFile(files) {
         }
 
         // HACK: エラーの原因？ちょっとだけ待機
-        await page.waitForTimeout(500);
+        await page.waitForTimeout(300);
     };
 }
 

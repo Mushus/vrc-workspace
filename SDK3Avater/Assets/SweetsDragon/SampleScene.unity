@@ -349,6 +349,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: d2695bb1cf39f3247a85085fb06c7d5e, type: 2}
+    - target: {fileID: 9500000, guid: c70bbb4071bbd51439d251a3651ae355, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 45b1a49440961034e896c3b7a2976b4f, type: 2}
     - target: {fileID: 13700000, guid: c70bbb4071bbd51439d251a3651ae355, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -373,6 +377,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: d2695bb1cf39f3247a85085fb06c7d5e, type: 2}
+    - target: {fileID: 13700002, guid: c70bbb4071bbd51439d251a3651ae355, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 23
+      objectReference: {fileID: 0}
     - target: {fileID: 13700002, guid: c70bbb4071bbd51439d251a3651ae355, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -405,6 +413,38 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[7]
       value: 
       objectReference: {fileID: 2100000, guid: 9158f3c09fbae00428db0b78a08c1bc6, type: 2}
+    - target: {fileID: 13700002, guid: c70bbb4071bbd51439d251a3651ae355, type: 3}
+      propertyPath: m_SkinnedMotionVectors
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: c70bbb4071bbd51439d251a3651ae355, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[16]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: c70bbb4071bbd51439d251a3651ae355, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[20]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: c70bbb4071bbd51439d251a3651ae355, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[21]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: c70bbb4071bbd51439d251a3651ae355, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[22]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: c70bbb4071bbd51439d251a3651ae355, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[19]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: c70bbb4071bbd51439d251a3651ae355, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[18]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: c70bbb4071bbd51439d251a3651ae355, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[17]
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c70bbb4071bbd51439d251a3651ae355, type: 3}
 --- !u!1 &656844741 stripped
@@ -437,7 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: -1427037861, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchedFromSDKPipeline: 0
+  launchedFromSDKPipeline: 1
   completedSDKPipeline: 0
   blueprintId: avtr_04b5d634-4c99-4178-ad73-50a59c019ab8
   contentType: 0
@@ -458,19 +498,35 @@ MonoBehaviour:
   ViewPosition: {x: 0, y: 0.6153761, z: 0.1425495}
   Animations: 0
   ScaleIPD: 1
-  lipSync: 0
+  lipSync: 3
   lipSyncJawBone: {fileID: 0}
   lipSyncJawClosed: {x: 0, y: 0, z: 0, w: 1}
   lipSyncJawOpen: {x: 0, y: 0, z: 0, w: 1}
-  VisemeSkinnedMesh: {fileID: 0}
+  VisemeSkinnedMesh: {fileID: 656844750}
   MouthOpenBlendShapeName: Facial_Blends.Jaw_Down
-  VisemeBlendShapes: []
+  VisemeBlendShapes:
+  - vrc.v_sil
+  - vrc.v_pp
+  - vrc.v_ff
+  - vrc.v_th
+  - vrc.v_dd
+  - vrc.v_kk
+  - vrc.v_ch
+  - vrc.v_ss
+  - vrc.v_nn
+  - vrc.v_rr
+  - vrc.v_aa
+  - vrc.v_e
+  - vrc,v_ih
+  - vrc.v_oh
+  - vrc.v_ou
   unityVersion: 2018.4.20f1
   portraitCameraPositionOffset: {x: 0, y: 0, z: 0}
   portraitCameraRotationOffset: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-  customExpressions: 0
-  expressionsMenu: {fileID: 0}
-  expressionParameters: {fileID: 0}
+  customExpressions: 1
+  expressionsMenu: {fileID: 11400000, guid: e14287a815851ca4cbe3438cb75f46ea, type: 2}
+  expressionParameters: {fileID: 11400000, guid: 5bda17b1ebdd9b940b80f742552b73ec,
+    type: 2}
   enableEyeLook: 1
   customEyeLookSettings:
     eyeMovement:
@@ -541,7 +597,7 @@ MonoBehaviour:
         right: {x: 0, y: 0, z: 0, w: 0}
     eyelidsSkinnedMesh: {fileID: 0}
     eyelidsBlendshapes: 
-  customizeAnimationLayers: 0
+  customizeAnimationLayers: 1
   baseAnimationLayers:
   - isEnabled: 0
     type: 0
@@ -565,9 +621,10 @@ MonoBehaviour:
     isDefault: 1
   - isEnabled: 0
     type: 5
-    animatorController: {fileID: 0}
+    animatorController: {fileID: 9100000, guid: 45b1a49440961034e896c3b7a2976b4f,
+      type: 2}
     mask: {fileID: 0}
-    isDefault: 1
+    isDefault: 0
   specialAnimationLayers:
   - isEnabled: 0
     type: 6
@@ -585,9 +642,50 @@ MonoBehaviour:
     mask: {fileID: 0}
     isDefault: 1
   AnimationPreset: {fileID: 0}
-  animationHashSet: []
+  animationHashSet:
+  - hash: -452885341
+    name: SmilingFace
+  - hash: 1432961145
+    name: Idle
+  - hash: 708320875
+    name: EmotionlessFace
+  - hash: 115137817
+    name: SleepyFace
+  - hash: 998666551
+    name: SquintingFace
+  - hash: -729824102
+    name: anglyFace
+  - hash: 1275005415
+    name: SadFace
+  - hash: -1987892763
+    name: SurprisedFace
+  - hash: 104156323
+    name: Idle
+  - hash: 2145476588
+    name: EyeEffectStar
+  - hash: 1788349006
+    name: EyeEffectHart
   autoFootsteps: 1
   autoLocomotion: 1
+--- !u!114 &656844746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656844741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentType: 0
+--- !u!137 &656844750 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 13700002, guid: c70bbb4071bbd51439d251a3651ae355,
+    type: 3}
+  m_PrefabInstance: {fileID: 656844740}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1173724423
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,10 +3,10 @@
 # LISENCE_TEMPLATE := "[LISENCE_TEMPLATE]"
 NAME_OUTPUT      ?= dist
 NAME_OUTPUT_ZIP  ?= output.zip
-# FILE_FROM_KRA    := "[FILE_FROM_KRA]"
-# FILE_COPIED      := "[FILE_COPIED]"
-# FILE_FROM_BLEND  := "[FILE_FROM_BLEND]"
-# FILE_MAIN_FBX    := "[FILE_MAIN_FBX]"
+FILE_FROM_KRA    ?= 
+FILE_COPIED      ?= 
+FILE_FROM_BLEND  ?= 
+FILE_MAIN_FBX    ?= 
 
 NAME_README        := README.md
 NAME_LISENCE       := LISENCE.md
@@ -45,7 +45,7 @@ clean:
 zip:
 	$(PATH_ZIP)
 
-upload: $(NAME_OUTPUT_ZIP) $(PATH_OUT_UPLOAD_CONFIG)
+upload: $(PATH_ZIP) $(PATH_OUT_UPLOAD_CONFIG)
 	cat $(PATH_OUT_UPLOAD_CONFIG) \
 	| docker run -i --rm \
 		-v $(PATH_MAKEFILE_DIR):/workspace \

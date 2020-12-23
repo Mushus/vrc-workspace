@@ -32,8 +32,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: blendShape.vrc.eyeeffect_star
-    path: Body
+    attribute: blendShape.vrc.eff_star
+    path: SweetsDragon
     classID: 137
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -45,8 +45,8 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2073732236
-      attribute: 3530552987
+      path: 2722093761
+      attribute: 2584938846
       script: {fileID: 0}
       typeID: 137
       customType: 20
@@ -88,8 +88,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: blendShape.vrc.eyeeffect_star
-    path: Body
+    attribute: blendShape.vrc.eff_star
+    path: SweetsDragon
     classID: 137
     script: {fileID: 0}
   m_EulerEditorCurves: []

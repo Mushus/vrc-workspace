@@ -3,11 +3,11 @@
         "id": "2613338",
         "description": $MODEL_DESCRIPTION,
         "files": [
-            { "path": "/workspace/output.zip" }
+            { "path": "/workspace/dist/output.zip" }
         ],
         "variations": [
-            { "files": [0] },
+            { "files": [0] }
         ],
-        "saveas": "draft"
+        "saveas": "public"
     }
 ]

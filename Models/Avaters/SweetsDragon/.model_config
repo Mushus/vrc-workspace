@@ -5,7 +5,7 @@ export MODEL_DESCRIPTION="$(cat <<'EOS'
 EOS
 )"
 
-export MODEL_QUEST_COMPATIBLE="未対応 ( アルファ値未対応のため )"
+export MODEL_QUEST_COMPATIBLE="対応"
 
 export DATA_CONTENTS="$(cat <<'EOS'
 - Shiro.unitypackage ファイル
@@ -32,6 +32,6 @@ EOS
 )"
 
 export LAST_MODIFIED="$(cat <<'EOS'
-- 2020/12/20 公開
+- 2020/12/23 公開
 EOS
 )"
