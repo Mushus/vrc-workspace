@@ -1,0 +1,40 @@
+export MODEL_NAME=ホイップ
+
+export MODEL_DESCRIPTION="$(cat <<'EOS'
+山の奥地に生息するもふもふな妖精。稀に人里に降りてくる。
+EOS
+)"
+
+export MODEL_QUEST_COMPATIBLE=対応
+
+export DATA_CONTENTS="$(cat <<'EOS'
+- Avater.unitypackage ファイル
+- WhippedCream.blend 3D モデルデータ
+- WhippedCream.fbx 3D モデルデータ
+- BaseColor テクスチャデータ (png, psd※1, kra)
+- Normal テクスチャデータ (png, psd※1, kra)
+- MatCap テクスチャデータ (png, psd※1, kra)
+- Displacement テクスチャデータ (png)
+- LISENCE 利用規約
+- README モデル概要
+
+※1 psd ファイルは kra ファイル (Krita 専用画像形式 ) より生成しているため、 実際の画像とは異なる場合があります
+EOS
+)"
+
+export GETTING_STARTED="$(cat <<'EOS'
+簡易的な大まかなデータの利用方法です。
+Unity での操作方法や VRChat SDK の利用方法についての詳細は詳しく説明している方がいますので、 Google 等で検索してみてください。
+
+1. VRChat SDK3 Avater を導入済みの Unity プロジェクトを用意します。
+2. `Avater.unitypackage` をダブルクリックし、プロジェクトにインポートします。
+3. インポートされたディレクトリのシーンファイル `SampleScene.scene` を開きます。
+4. VRChat SDK のツールを利用して公開します。
+EOS
+)"
+
+export LAST_MODIFIED="$(cat <<'EOS'
+- 2020/12/16 公開
+- 2020/12/19 README 修正
+EOS
+)"

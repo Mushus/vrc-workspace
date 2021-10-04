@@ -3,7 +3,7 @@
         "id": "2613249",
         "description": $MODEL_DESCRIPTION,
         "files": [
-            { "path": "/workspace/output.zip" }
+            { "path": "/workspace/dist/output.zip" }
         ],
         "variations": [
             { "files": [0] }

@@ -267,9 +267,9 @@ MonoBehaviour:
   m_Script: {fileID: -1427037861, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchedFromSDKPipeline: 0
+  launchedFromSDKPipeline: 1
   completedSDKPipeline: 0
-  blueprintId: avtr_4e318920-c7ff-40de-b3e0-ae22acbdf6a8
+  blueprintId: avtr_32b340d8-a5c2-4bfa-9f7c-7803993f62af
   contentType: 0
   assetBundleUnityVersion: 
 --- !u!114 &1109538386
@@ -411,7 +411,8 @@ MonoBehaviour:
     isDefault: 1
   - isEnabled: 0
     type: 5
-    animatorController: {fileID: 0}
+    animatorController: {fileID: 9100000, guid: d7a714a413eb7b948b4b1be470b3f9f4,
+      type: 2}
     mask: {fileID: 0}
     isDefault: 0
   specialAnimationLayers:
@@ -431,7 +432,19 @@ MonoBehaviour:
     mask: {fileID: 0}
     isDefault: 1
   AnimationPreset: {fileID: 0}
-  animationHashSet: []
+  animationHashSet:
+  - hash: 2049139802
+    name: Idle
+  - hash: 1836785410
+    name: SmilingFace
+  - hash: 1948097217
+    name: SleepyFace
+  - hash: 404401524
+    name: EmotionlessFace
+  - hash: 1959127633
+    name: AstonishedFace
+  - hash: -347652567
+    name: SquintingFace
   autoFootsteps: 1
   autoLocomotion: 1
 --- !u!4 &1109538387 stripped
@@ -452,6 +465,19 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 1109538383}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1109538390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109538384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentType: 0
 --- !u!1 &1642724551
 GameObject:
   m_ObjectHideFlags: 0

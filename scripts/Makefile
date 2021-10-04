@@ -3,10 +3,10 @@
 # LISENCE_TEMPLATE := "[LISENCE_TEMPLATE]"
 NAME_OUTPUT      ?= dist
 NAME_OUTPUT_ZIP  ?= output.zip
-FILE_FROM_KRA    ?= 
-FILE_COPIED      ?= 
-FILE_FROM_BLEND  ?= 
-FILE_MAIN_FBX    ?= 
+FILE_FROM_KRA    ?=
+FILE_COPIED      ?=
+FILE_FROM_BLEND  ?=
+FILE_MAIN_FBX    ?=
 
 NAME_README        := README.md
 NAME_LISENCE       := LISENCE.md
@@ -36,14 +36,13 @@ DOCKER_IMAGE_BLENDER  := blender:latest
 DOCKER_IMAGE_KRITA    := krita:latest
 DOCKER_IMAGE_UPLOADER := booth-uploader:latest
 
-# custom script 
+# custom script
 .PHONY: clean zip upload
 
 clean:
 	rm -rf $(PATH_OUTPUT)
 
-zip:
-	$(PATH_ZIP)
+zip: $(PATH_ZIP)
 
 upload: $(PATH_ZIP) $(PATH_OUT_UPLOAD_CONFIG)
 	cat $(PATH_OUT_UPLOAD_CONFIG) \

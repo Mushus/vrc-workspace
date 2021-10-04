@@ -557,7 +557,7 @@ PlayerSettings:
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}
   allowUnsafeCode: 0
-  additionalIl2CppArgs: 
+  additionalIl2CppArgs: --linker-flags="-long-plt"
   scriptingRuntimeVersion: 1
   apiCompatibilityLevelPerPlatform:
     Android: 3
